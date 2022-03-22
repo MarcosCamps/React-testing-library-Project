@@ -28,11 +28,4 @@ describe('Teste se o topo da aplicação contém um conjunto fixo de links de na
       expect(thirdLink).toBeInTheDocument();
       userEvent.click(thirdLink);
     });
-    // it('Redirecionada para a página Not Found ao entrar em uma URL desconhecida', () => {
-    //   const { history } = renderWithRouter(<App />);
-    //   history.push('/NotFound/');
-    //   const notFoundTitle = screen.getByRole('heading',
-    //     { name: /Página não encontrada/i, level: 1 });
-    //   expect(notFoundTitle).toBeDefined();
-    // });
   });
