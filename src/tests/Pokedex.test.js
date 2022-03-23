@@ -27,9 +27,9 @@ describe('Testando o componente Pokedex', () => {
     renderWithRouter(<App />);
     const numberSeven = 7;
     const filterBtn = screen.getAllByTestId('pokemon-type-button');
-    const pokemonFilter = screen.getByRole('button', { name: 'Electric' });
+    const pokemonFiltered = screen.getByRole('button', { name: 'Electric' });
     expect(filterBtn).toHaveLength(numberSeven);
-    expect(pokemonFilter).toBeInTheDocument();
+    expect(pokemonFiltered).toBeInTheDocument();
   });
   it('Teste se a Pokédex contém um botão para resetar o filtro', () => {
     renderWithRouter(<App />);
